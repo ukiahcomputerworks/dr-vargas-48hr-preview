@@ -1330,3 +1330,154 @@ h3 {
     border: 1px solid CanvasText;
   }
 }
+
+/* 48-hour facelift revision: preserve the existing practice identity and content. */
+.brand {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #050505;
+}
+
+.brand-wordmark {
+  width: min(330px, 34vw);
+  height: auto;
+  display: block;
+}
+
+.hero-photo-wrap {
+  position: relative;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid rgba(215, 157, 74, 0.6);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transform: rotate(1.2deg);
+}
+
+.hero-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: calc(var(--radius-lg) - 10px);
+}
+
+.photo-caption {
+  margin: 11px 6px 1px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.doctor-intro {
+  padding: 42px;
+  border-radius: var(--radius-lg);
+  background: var(--teal-900);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.doctor-intro .eyebrow {
+  color: var(--gold-light);
+}
+
+.doctor-intro h2 {
+  color: var(--white);
+}
+
+.doctor-intro p:not(.eyebrow) {
+  margin: 20px 0 28px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.doctor-intro .button-secondary {
+  border-color: rgba(255, 255, 255, 0.38);
+  color: var(--white);
+}
+
+.doctor-card {
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.doctor-card:first-child {
+  padding-top: 0;
+}
+
+.doctor-card:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.doctor-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-serif);
+  font-size: 28px;
+}
+
+.doctor-card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.resource-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding-top: 28px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resource-logos a {
+  display: inline-flex;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.resource-logos img {
+  width: auto;
+  height: 42px;
+  display: block;
+}
+
+@media (max-width: 1040px) {
+  .brand-wordmark {
+    width: min(300px, 44vw);
+  }
+}
+
+@media (max-width: 760px) {
+  .brand {
+    max-width: calc(100% - 62px);
+  }
+
+  .brand-wordmark {
+    width: min(280px, 66vw);
+  }
+
+  .hero-photo-wrap {
+    transform: none;
+  }
+
+  .doctor-intro {
+    padding: 32px 26px;
+  }
+
+  .resource-logos {
+    flex-wrap: wrap;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .resource-logos span {
+    flex: 0 0 100%;
+  }
+}
